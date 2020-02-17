@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+<p align="center">
+  <a href="https://www.fengerzh.com/">
+    <img alt="zhangjing" src="/assets/img/icons/android-chrome-192x192.png" />
+  </a>
+</p>
 
-You can use the [editor on GitHub](https://github.com/warn1/warn1.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# 日新亭模板
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+想了解与此模板相关的任何问题，请点此链接：[![Join the chat at https://gitter.im/fengerzh-github-io/Lobby](https://badges.gitter.im/fengerzh-github-io/Lobby.svg)](https://gitter.im/fengerzh-github-io/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-### Markdown
+欢迎加入：[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+编译结果：
+[![Build Status](https://semaphoreci.com/api/v1/fengerzh/fengerzh-github-io/branches/master/shields_badge.svg)](https://semaphoreci.com/fengerzh/fengerzh-github-io)
+[![CircleCI](https://circleci.com/gh/fengerzh/fengerzh.github.io.svg?style=svg)](https://circleci.com/gh/fengerzh/fengerzh.github.io)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/37c78fba3d724be09bab853b9e84f91f)](https://www.codacy.com/app/fengerzh/fengerzh.github.io?utm_source=github.com&utm_medium=referral&utm_content=fengerzh/fengerzh.github.io&utm_campaign=Badge_Grade)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4af97c85-c94b-4df1-8832-184020a7d0c5/deploy-status)](https://app.netlify.com/sites/fengerzh/deploys)
+[![Build status](https://ci.appveyor.com/api/projects/status/0e8iejyct7g7a3dv?svg=true)](https://ci.appveyor.com/project/fengerzh/fengerzh-github-io)
 
-```markdown
-Syntax highlighted code block
+支持 996.icu：<a href="https://996.icu"><img src="https://img.shields.io/badge/support-996.icu-red.svg"></a>
 
-# Header 1
-## Header 2
-### Header 3
+日新亭模板是一套基于`Jekyll`框架的模板，目前运行在[日新亭](https://www.fengerzh.com)网站上。日新亭网站基于[Github Pages](https://pages.github.com/)自动发布，`https`技术采用[CloudFlare](http://cloudflare.com/)方案，图床采用[Cloudinary](https://cloudinary.com/)自动压缩方案，采用[CircleCI](https://circleci.com/)进行持续集成。
 
-- Bulleted
-- List
+此模板的基础是[Jekflix](https://github.com/thiagorossener/jekflix-template)，在此基础上做了大量定制改造，包括添加`Google`渐进式 Web 应用(`Progressive Web Apps`)功能等，以使其更加适合中文环境和对移动端友好。
 
-1. Numbered
-2. List
+所有文章的`Markdown`源代码在`_posts`文件夹之下，供参考。如果利用此模板建设自己的网站，可以直接删除`_posts`下的所有文件。
 
-**Bold** and _Italic_ and `Code` text
+此模板还在持续更新中，随时添加新的功能和新的内容。
 
-[Link](url) and ![Image](src)
+## 下载
+
+可直接通过`Github`下载本模板：
+
+```bash
+git clone git@github.com:fengerzh/fengerzh.github.io.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## 安装
 
-### Jekyll Themes
+### 安装 Jekyll
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/warn1/warn1.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+brew install ruby
+gem install bundler
+gem install jekyll
+```
 
-### Support or Contact
+### 编译 css 和 js
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```bash
+yarn
+gulp
+```
+
+## 运行
+
+```bash
+bundle exec jekyll serve
+```
