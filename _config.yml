@@ -99,3 +99,5 @@ links:
 
 # Exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules', 'vendor']
+
+theme: jekyll-theme-minimal
